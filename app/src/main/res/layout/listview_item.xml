@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/modlabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Modelo" />
+
+    <TextView
+        android:id="@+id/mod1"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/marc1"
+        android:layout_toStartOf="@+id/stocklabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/marc1" />
+
+    <TextView
+        android:id="@+id/marclabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modlabel"
+        android:text="Status" />
+
+    <TextView
+        android:id="@+id/marc1"
+        android:text="txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/marclabel"
+        android:layout_toEndOf="@+id/marclabel"
+        android:layout_marginLeft="31dp" />
+
+    <TextView
+        android:id="@+id/stocklabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock"
+        android:layout_above="@+id/marc1"
+        android:layout_toStartOf="@+id/stk1"
+        android:layout_marginRight="35dp" />
+
+    <TextView
+        android:id="@+id/stk1"
+        android:text="st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/marc1"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="porc"
+        android:id="@+id/porc1"
+        android:layout_toEndOf="@+id/marc1"
+        android:layout_alignTop="@+id/marc1"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="cant"
+        android:id="@+id/cant1"
+        android:layout_below="@+id/modlabel"
+        android:layout_alignEnd="@+id/stk1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="id"
+        android:id="@+id/id1"
+        android:layout_toEndOf="@+id/porc1"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/porc1" />
+
+</RelativeLayout>
